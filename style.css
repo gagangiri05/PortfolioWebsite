@@ -181,9 +181,6 @@ h3 {
 	}
 }
 
-/*******************
-		UTILITIES
-*************************/
 .container {
 	max-width: 1200px;
 	margin-inline: auto;
@@ -243,27 +240,6 @@ small {
 	color: var(--other-clr);
 }
 
-/* link to skip to content for accesibility (keyboard users) */
-.skip-to-content {
-	position: absolute;
-	background: var(--accent-clr);
-	color: var(--secondary-clr);
-	padding: 0.75rem 1rem;
-	left: 1.5rem;
-	top: 0;
-	border-radius: 0 0 0.5rem 0.5rem;
-	font-size: 1.4rem;
-	transform: translateY(-200%);
-	transition: all 350ms ease-in;
-}
-
-.skip-to-content:focus {
-	transform: translateY(0);
-}
-
-/*******************
-		HEADER
-*************************/
 .nav {
 	width: 100%;
 	padding: 0 1rem;
@@ -332,9 +308,7 @@ small {
 	color: var(--secondary-clr);
 }
 
-/*******************
-		HERO SECTION
-*************************/
+
 .hero {
 	padding: 0 1rem;
 }
@@ -413,22 +387,6 @@ small {
 	transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
-.download-link {
-	color: var(--other-clr);
-	transition: color 0.45s ease-in-out;
-}
-
-.download-link:hover {
-	color: #fff;
-}
-
-.download-link:focus {
-	outline: none;
-}
-
-/*******************
-		ABOUT SECTION
-*************************/
 .about-me {
 	margin-block-start: var(--section-mt);
 	background: var(--secondary-clr);
@@ -481,104 +439,16 @@ small {
 /*******************
 		PROJECTS SECTION
 *************************/
-.projects-section {
-	margin-block-start: var(--section-mt);
-	padding: 4rem 1rem;
-}
-
-.projects {
-	padding-block-start: 5rem;
-	display: flex;
-	flex-direction: column;
-	gap: 12rem;
-}
-
-.project {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	place-items: center;
-	gap: 5rem;
-}
-
-.project-img {
-	transition: opactiy 300ms ease-in-out;
-	position: relative;
-	display: inline-block;
-}
-
-.project-img:hover {
-	opacity: 0.9;
-}
-
-.project:nth-child(even) a {
-	order: 2;
-}
-.project:nth-child(even) div {
-	order: 1;
-}
-
-.project h3 {
-	font-size: clamp(2rem, 3vw, 4rem);
-	font-weight: 500;
-	letter-spacing: 5px;
-	color: var(--other-clr);
-}
-
-.project h2 {
-	padding-block-start: clamp(1.5rem, 2vw, 3rem);
-	font-size: clamp(2.5rem, 3vw, 4rem);
-}
-
-.project p {
-	padding-block-start: 1.5rem;
-	max-width: 500px;
-}
-
-.tech-stack,
-.project-links {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 2rem;
-	padding-block-start: 2rem;
-}
-
-.project-links {
-	column-gap: 5rem;
-	padding-block-start: 3.2rem;
-}
-
-.tech-stack li {
-	padding: 0.2rem 0.5rem;
-	background: var(--tag-clr);
-	border-radius: 2px;
-	color: var(--primary-clr);
-	font-size: clamp(1.15rem, 1vw, 1.3rem);
-}
-
-.project-links a {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	position: relative;
-	transition: var(--transition-clr);
-}
-
-.project-links a:hover {
-	color: var(--accent-clr);
-}
-
-/* other noteworthy projects */
-.other-noteworthy-project {
+.showcase-project {
 	margin-block-start: 15rem;
 }
 
-.other-noteworthy-project h3 {
+.showcase-project h3 {
 	text-align: center;
 	font-size: 3rem;
 }
 
-.other-projects {
+.projects {
 	padding-block-start: calc(var(--section-mt) / 2);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -587,7 +457,7 @@ small {
 	margin: 0 auto;
 }
 
-.other-projects a {
+.projects a {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -604,16 +474,16 @@ small {
 	transition: background 300ms ease-in-out;
 }
 
-.other-projects a:hover {
+.projects a:hover {
 	background: transparent;
 	box-shadow: 0px 0px 1px var(--other-clr);
 }
 
-.other-projects a img {
+.projects a img {
 	object-fit: cover;
 }
 
-.other-projects div {
+.projects div {
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -621,11 +491,11 @@ small {
 	gap: 1rem;
 }
 
-.other-projects h4 {
+.projects h4 {
 	font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.other-projects ul {
+.projects ul {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
@@ -633,7 +503,7 @@ small {
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
 }
 
-.other-projects p {
+.projects p {
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
 }
 
